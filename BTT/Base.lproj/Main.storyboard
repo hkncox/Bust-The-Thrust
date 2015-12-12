@@ -177,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wed-Ac-12p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1226" y="-162"/>
+            <point key="canvasLocation" x="1194" y="-794"/>
         </scene>
         <!--InformalAssessment-->
         <scene sceneID="hGN-fl-6vH">
@@ -397,7 +397,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n3z-3e-TTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3529" y="-243"/>
+            <point key="canvasLocation" x="4341" y="-243"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WDx-u6-0Il">
@@ -416,7 +416,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="46a-8V-BEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="355" y="536"/>
+            <point key="canvasLocation" x="355" y="696"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zMA-IN-dmN">
@@ -435,7 +435,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1WC-IE-d1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1241" y="626"/>
+            <point key="canvasLocation" x="1235" y="730"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XK4-0D-4h3">
@@ -454,14 +454,71 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tac-Ud-UX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1291" y="-133"/>
+            <point key="canvasLocation" x="1563" y="-907"/>
+        </scene>
+        <!--Sign Up-->
+        <scene sceneID="om3-2s-sKS">
+            <objects>
+                <viewController id="47m-VG-3n0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ryJ-el-M0s"/>
+                        <viewControllerLayoutGuide type="bottom" id="xyX-zp-ujR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nO4-9l-6R4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign Up" id="1kb-Cd-WJc">
+                        <barButtonItem key="leftBarButtonItem" title="Home" style="plain" id="u0m-WL-wx5">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zO0-FC-3zv">
+                                <rect key="frame" x="20" y="7" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="S4R-Ja-viH" kind="show" id="ocM-iC-vUc"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Log In" id="jjz-P9-DPA">
+                            <connections>
+                                <segue destination="DoA-4P-3wS" kind="show" id="bGv-7b-xgo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rb-46-d5j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1323" y="-114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sCI-Wm-Dtt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ISa-mi-KEA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9k9-kX-UJg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="47m-VG-3n0" kind="relationship" relationship="rootViewController" id="qNq-WO-EY2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mex-YR-9gB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1631" y="-104"/>
         </scene>
     </scenes>
     <resources>
         <image name="Tongue Thrust Logo2" width="1108" height="524"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wQg-Yz-JDE"/>
+        <segue reference="ocM-iC-vUc"/>
+        <segue reference="bGv-7b-xgo"/>
         <segue reference="LdC-az-Dyj"/>
     </inferredMetricsTieBreakers>
 </document>
