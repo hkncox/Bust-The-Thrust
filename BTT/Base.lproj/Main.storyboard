@@ -42,11 +42,11 @@
                                 <rect key="frame" x="20" y="20" width="560" height="17"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.15686274509803921" green="0.44705882352941179" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s1b-V9-EN7">
-                                <rect key="frame" x="20" y="44" width="560" height="535.5"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s1b-V9-EN7">
+                                <rect key="frame" x="20" y="72" width="560" height="520"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Xii-oO-CYX">
                                         <rect key="frame" x="8" y="30" width="545" height="423"/>
@@ -116,20 +116,29 @@
                                                     </button>
                                                 </subviews>
                                                 <animations/>
+                                                <color key="backgroundColor" red="0.15686274509803921" green="0.44705882352941179" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                                             </stackView>
                                         </subviews>
                                         <animations/>
+                                        <color key="backgroundColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailingMargin" secondItem="iJv-h1-UNr" secondAttribute="trailing" id="DpX-nR-7CN"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Xii-oO-CYX" secondAttribute="trailing" constant="1" id="rmy-u8-7mF"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.12549019610000001" green="0.3411764706" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="s1b-V9-EN7" firstAttribute="top" secondItem="fXf-Jd-eTc" secondAttribute="bottom" id="a2B-JP-5Lg"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="dataLabel" destination="cF2-Le-7mQ" id="3EH-BK-JV6"/>
@@ -143,34 +152,25 @@
         <scene sceneID="cbQ-A5-4bH">
             <objects>
                 <viewController title="LogIn" id="uvf-B7-vIb" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tYU-Go-E71"/>
-                        <viewControllerLayoutGuide type="bottom" id="L51-AW-HoR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4I0-uj-Njn">
+                    <label key="view" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JUb-hV-uGj">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggE-rq-Kzd">
-                                <rect key="frame" x="277" y="74" width="47" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ggE-rq-Kzd" firstAttribute="leading" secondItem="4I0-uj-Njn" secondAttribute="leadingMargin" id="Kpf-A9-057"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ggE-rq-Kzd" secondAttribute="trailing" id="hay-g2-jgQ"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="WWh-b0-N1J"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <navigationItem key="navigationItem" id="WWh-b0-N1J">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="Kd3-Wl-UOz">
+                            <connections>
+                                <segue destination="S4R-Ja-viH" kind="show" id="Zji-8F-lWb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SkH-jp-b2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2072" y="-243"/>
+            <point key="canvasLocation" x="1913" y="-280"/>
         </scene>
         <!--InformalAssessment-->
         <scene sceneID="hGN-fl-6vH">
@@ -203,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sc0-EK-ekk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1205" y="996"/>
+            <point key="canvasLocation" x="469" y="900"/>
         </scene>
         <!--LearnMore-->
         <scene sceneID="1Xp-bc-O8H">
@@ -335,19 +335,24 @@
                     </view>
                     <navigationItem key="navigationItem" title="Learn More" id="xv4-3t-mzK">
                         <barButtonItem key="leftBarButtonItem" title="Home" id="xO6-F8-NFQ">
+                            <color key="tintColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="S4R-Ja-viH" kind="show" id="gUi-tp-soV"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem title="Sign Up" id="s3Z-Ww-2uq"/>
-                            <barButtonItem title="Log In" id="R0s-gi-ExG"/>
+                            <barButtonItem title="Sign Up" id="s3Z-Ww-2uq">
+                                <color key="tintColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </barButtonItem>
+                            <barButtonItem title="Log In" id="R0s-gi-ExG">
+                                <color key="tintColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pxO-4m-1pb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1267" y="216"/>
+            <point key="canvasLocation" x="1247" y="614"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="06W-rb-JjZ">
@@ -429,4 +434,7 @@
     <resources>
         <image name="Tongue Thrust Logo2" width="1108" height="524"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gUi-tp-soV"/>
+    </inferredMetricsTieBreakers>
 </document>
