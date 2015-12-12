@@ -77,6 +77,9 @@
                                                             <color key="titleColor" red="0.12549019607843137" green="0.3411764705882353" blue="0.41568627450980394" alpha="1" colorSpace="calibratedRGB"/>
                                                             <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <segue destination="DoA-4P-3wS" kind="show" id="CUN-Sn-Ctb"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5u-zy-hHH">
                                                         <rect key="frame" x="243" y="47" width="60" height="32"/>
@@ -174,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wed-Ac-12p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1246" y="-190"/>
+            <point key="canvasLocation" x="1226" y="-162"/>
         </scene>
         <!--InformalAssessment-->
         <scene sceneID="hGN-fl-6vH">
@@ -451,14 +454,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tac-Ud-UX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1241" y="-190"/>
+            <point key="canvasLocation" x="1291" y="-133"/>
         </scene>
     </scenes>
     <resources>
         <image name="Tongue Thrust Logo2" width="1108" height="524"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="340-YS-HM3"/>
-        <segue reference="eLC-k0-Nc4"/>
+        <segue reference="wQg-Yz-JDE"/>
+        <segue reference="LdC-az-Dyj"/>
     </inferredMetricsTieBreakers>
 </document>
