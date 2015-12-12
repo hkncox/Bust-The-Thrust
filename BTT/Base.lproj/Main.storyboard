@@ -77,9 +77,6 @@
                                                             <color key="titleColor" red="0.12549019607843137" green="0.3411764705882353" blue="0.41568627450980394" alpha="1" colorSpace="calibratedRGB"/>
                                                             <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
-                                                        <connections>
-                                                            <segue destination="KQM-2k-McW" kind="show" identifier="LogInButtonClick" id="Asq-8X-Cpp"/>
-                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5u-zy-hHH">
                                                         <rect key="frame" x="243" y="47" width="60" height="32"/>
@@ -148,29 +145,36 @@
             </objects>
             <point key="canvasLocation" x="527" y="-235"/>
         </scene>
-        <!--LogIn-->
-        <scene sceneID="cbQ-A5-4bH">
+        <!--Log In-->
+        <scene sceneID="Hr5-oB-YIQ">
             <objects>
-                <viewController title="LogIn" id="uvf-B7-vIb" sceneMemberID="viewController">
-                    <label key="view" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JUb-hV-uGj">
+                <viewController id="BuK-Bo-qms" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KWu-9l-ES2"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Xb-44-Um0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ijN-ai-e0t">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <navigationItem key="navigationItem" id="WWh-b0-N1J">
-                        <barButtonItem key="leftBarButtonItem" title="Home" id="Kd3-Wl-UOz">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Log In" id="zn9-bM-zrZ">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="A0S-1D-IBK"/>
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="PDj-HD-mDH">
+                            <color key="tintColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="S4R-Ja-viH" kind="show" id="Zji-8F-lWb"/>
+                                <segue destination="S4R-Ja-viH" kind="show" id="wQg-Yz-JDE"/>
                             </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Sign Up" id="M9N-1E-Usv">
+                            <color key="tintColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SkH-jp-b2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wed-Ac-12p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1913" y="-280"/>
+            <point key="canvasLocation" x="1246" y="-190"/>
         </scene>
         <!--InformalAssessment-->
         <scene sceneID="hGN-fl-6vH">
@@ -199,11 +203,30 @@
                             <constraint firstAttribute="trailingMargin" secondItem="rnD-LT-dVS" secondAttribute="trailing" id="zpW-vS-6Ik"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Aay-5v-Sqf"/>
+                    <navigationItem key="navigationItem" title="Informal Assessment" id="Aay-5v-Sqf">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="VMv-wH-AiJ"/>
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="GI2-5K-76J">
+                            <color key="tintColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="S4R-Ja-viH" kind="showDetail" id="340-YS-HM3"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Sign Up" id="L4A-f9-Jb4">
+                                <color key="tintColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </barButtonItem>
+                            <barButtonItem title="Log In" id="QBt-Hy-OA8">
+                                <color key="tintColor" red="0.15686274510000001" green="0.44705882349999998" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="BuK-Bo-qms" kind="show" id="eLC-k0-Nc4"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sc0-EK-ekk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="469" y="900"/>
+            <point key="canvasLocation" x="355" y="536"/>
         </scene>
         <!--LearnMore-->
         <scene sceneID="1Xp-bc-O8H">
@@ -352,7 +375,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pxO-4m-1pb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1247" y="614"/>
+            <point key="canvasLocation" x="1241" y="626"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="06W-rb-JjZ">
@@ -371,7 +394,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n3z-3e-TTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2717" y="-243"/>
+            <point key="canvasLocation" x="3529" y="-243"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WDx-u6-0Il">
@@ -390,26 +413,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="46a-8V-BEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="427" y="746"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="gCX-ZD-bB5">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KQM-2k-McW" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U5W-kA-XDC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="uvf-B7-vIb" kind="relationship" relationship="rootViewController" id="hjR-b6-W7l"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WK7-2q-JdS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1260" y="-243"/>
+            <point key="canvasLocation" x="355" y="536"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zMA-IN-dmN">
@@ -428,13 +432,33 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1WC-IE-d1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2153" y="498"/>
+            <point key="canvasLocation" x="1241" y="626"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XK4-0D-4h3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DoA-4P-3wS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i5N-r9-fWw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BuK-Bo-qms" kind="relationship" relationship="rootViewController" id="LdC-az-Dyj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tac-Ud-UX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1241" y="-190"/>
         </scene>
     </scenes>
     <resources>
         <image name="Tongue Thrust Logo2" width="1108" height="524"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gUi-tp-soV"/>
+        <segue reference="340-YS-HM3"/>
+        <segue reference="eLC-k0-Nc4"/>
     </inferredMetricsTieBreakers>
 </document>
