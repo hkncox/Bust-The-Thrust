@@ -12,7 +12,7 @@ import UIKit
 class LearnMoreExpandingCell : UITableViewCell{
     @IBOutlet weak var WhatIsTongueThrust: UILabel!
     @IBOutlet weak var WhatIsTT: UILabel!
-    class var expandedHeight: CGFloat { get {return 200}}
+       class var expandedHeight: CGFloat { get {return 200}}
     class var defaultHeight :CGFloat {get { return 44}}
     func checkHeight(){
         WhatIsTT.hidden = (frame.size.height < LearnMoreExpandingCell.expandedHeight)
