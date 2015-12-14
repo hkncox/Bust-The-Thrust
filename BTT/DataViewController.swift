@@ -9,11 +9,11 @@
 import UIKit
 
 class DataViewController: UIViewController {
+    // MARK: Properties
 
     @IBOutlet weak var dataLabel: UILabel!
     var dataObject: String = ""
-
-
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,7 +28,7 @@ class DataViewController: UIViewController {
         super.viewWillAppear(animated)
         self.dataLabel!.text = dataObject
     }
-
+    //MARK: Actions
 
 }
 

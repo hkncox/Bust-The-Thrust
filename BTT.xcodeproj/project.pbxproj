@@ -13,9 +13,10 @@
 		549D80481C0D11B8007260E4 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D80471C0D11B8007260E4 /* ModelController.swift */; };
 		549D804B1C0D11B8007260E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 549D80491C0D11B8007260E4 /* Main.storyboard */; };
 		549D804D1C0D11B8007260E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 549D804C1C0D11B8007260E4 /* Assets.xcassets */; };
-		549D80501C0D11B8007260E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 549D804E1C0D11B8007260E4 /* LaunchScreen.storyboard */; };
 		549D805B1C0D11B8007260E4 /* BTTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D805A1C0D11B8007260E4 /* BTTTests.swift */; };
 		549D80661C0D11B8007260E4 /* BTTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D80651C0D11B8007260E4 /* BTTUITests.swift */; };
+		549D80BA1C165812007260E4 /* LearnMoreExpandingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D80B91C165812007260E4 /* LearnMoreExpandingCell.swift */; };
+		54FD13921C1B85E700CFBC94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD13911C1B85E700CFBC94 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,6 @@
 		549D80471C0D11B8007260E4 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		549D804A1C0D11B8007260E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		549D804C1C0D11B8007260E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		549D804F1C0D11B8007260E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		549D80511C0D11B8007260E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		549D80561C0D11B8007260E4 /* BTTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		549D805A1C0D11B8007260E4 /* BTTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTTTests.swift; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		549D80611C0D11B8007260E4 /* BTTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		549D80651C0D11B8007260E4 /* BTTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTTUITests.swift; sourceTree = "<group>"; };
 		549D80671C0D11B8007260E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		549D80B91C165812007260E4 /* LearnMoreExpandingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMoreExpandingCell.swift; sourceTree = "<group>"; };
+		54FD13911C1B85E700CFBC94 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +108,9 @@
 				549D80451C0D11B8007260E4 /* DataViewController.swift */,
 				549D80471C0D11B8007260E4 /* ModelController.swift */,
 				549D80491C0D11B8007260E4 /* Main.storyboard */,
+				54FD13911C1B85E700CFBC94 /* ViewController.swift */,
+				549D80B91C165812007260E4 /* LearnMoreExpandingCell.swift */,
 				549D804C1C0D11B8007260E4 /* Assets.xcassets */,
-				549D804E1C0D11B8007260E4 /* LaunchScreen.storyboard */,
 				549D80511C0D11B8007260E4 /* Info.plist */,
 			);
 			path = BTT;
@@ -235,7 +238,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				549D80501C0D11B8007260E4 /* LaunchScreen.storyboard in Resources */,
 				549D804D1C0D11B8007260E4 /* Assets.xcassets in Resources */,
 				549D804B1C0D11B8007260E4 /* Main.storyboard in Resources */,
 			);
@@ -262,10 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54FD13921C1B85E700CFBC94 /* ViewController.swift in Sources */,
 				549D80441C0D11B8007260E4 /* RootViewController.swift in Sources */,
 				549D80481C0D11B8007260E4 /* ModelController.swift in Sources */,
 				549D80461C0D11B8007260E4 /* DataViewController.swift in Sources */,
 				549D80421C0D11B8007260E4 /* AppDelegate.swift in Sources */,
+				549D80BA1C165812007260E4 /* LearnMoreExpandingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,14 +311,6 @@
 				549D804A1C0D11B8007260E4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		549D804E1C0D11B8007260E4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				549D804F1C0D11B8007260E4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -492,6 +488,7 @@
 				549D806C1C0D11B8007260E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		549D806D1C0D11B8007260E4 /* Build configuration list for PBXNativeTarget "BTTTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +497,7 @@
 				549D806F1C0D11B8007260E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		549D80701C0D11B8007260E4 /* Build configuration list for PBXNativeTarget "BTTUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +506,7 @@
 				549D80721C0D11B8007260E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
