@@ -16,7 +16,9 @@
 		549D805B1C0D11B8007260E4 /* BTTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D805A1C0D11B8007260E4 /* BTTTests.swift */; };
 		549D80661C0D11B8007260E4 /* BTTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D80651C0D11B8007260E4 /* BTTUITests.swift */; };
 		549D80BA1C165812007260E4 /* LearnMoreExpandingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D80B91C165812007260E4 /* LearnMoreExpandingCell.swift */; };
+		54F7AA111C4AA9580041316E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F7AA101C4AA9580041316E /* User.swift */; };
 		54FD13921C1B85E700CFBC94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD13911C1B85E700CFBC94 /* ViewController.swift */; };
+		E13C6F27C490B3F2D569694B /* Pods_BTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BA383D2CF71FBC097CF0CA /* Pods_BTT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +54,11 @@
 		549D80651C0D11B8007260E4 /* BTTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTTUITests.swift; sourceTree = "<group>"; };
 		549D80671C0D11B8007260E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		549D80B91C165812007260E4 /* LearnMoreExpandingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMoreExpandingCell.swift; sourceTree = "<group>"; };
+		54F7AA101C4AA9580041316E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		54FD13911C1B85E700CFBC94 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5BD56963B4BF23B81F09BB6A /* Pods-BTT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTT.release.xcconfig"; path = "Pods/Target Support Files/Pods-BTT/Pods-BTT.release.xcconfig"; sourceTree = "<group>"; };
+		A6BA383D2CF71FBC097CF0CA /* Pods_BTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8AA5ABA0690CEB909C495F4 /* Pods-BTT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BTT/Pods-BTT.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13C6F27C490B3F2D569694B /* Pods_BTT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +94,8 @@
 				549D80591C0D11B8007260E4 /* BTTTests */,
 				549D80641C0D11B8007260E4 /* BTTUITests */,
 				549D803F1C0D11B8007260E4 /* Products */,
+				6F063D9DC18970C0CC9E311D /* Pods */,
+				E3B3D138711104720591D547 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +117,7 @@
 				549D80451C0D11B8007260E4 /* DataViewController.swift */,
 				549D80471C0D11B8007260E4 /* ModelController.swift */,
 				549D80491C0D11B8007260E4 /* Main.storyboard */,
+				54F7AA101C4AA9580041316E /* User.swift */,
 				54FD13911C1B85E700CFBC94 /* ViewController.swift */,
 				549D80B91C165812007260E4 /* LearnMoreExpandingCell.swift */,
 				549D804C1C0D11B8007260E4 /* Assets.xcassets */,
@@ -134,6 +144,23 @@
 			path = BTTUITests;
 			sourceTree = "<group>";
 		};
+		6F063D9DC18970C0CC9E311D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8AA5ABA0690CEB909C495F4 /* Pods-BTT.debug.xcconfig */,
+				5BD56963B4BF23B81F09BB6A /* Pods-BTT.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E3B3D138711104720591D547 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6BA383D2CF71FBC097CF0CA /* Pods_BTT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 549D806A1C0D11B8007260E4 /* Build configuration list for PBXNativeTarget "BTT" */;
 			buildPhases = (
+				F9445EF8F7EAABB6D223124C /* Check Pods Manifest.lock */,
 				549D803A1C0D11B8007260E4 /* Sources */,
 				549D803B1C0D11B8007260E4 /* Frameworks */,
 				549D803C1C0D11B8007260E4 /* Resources */,
+				9A0CEA3EF5577F960A6D6FE8 /* Embed Pods Frameworks */,
+				35D1E061AC3D52FD48E316F1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +289,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35D1E061AC3D52FD48E316F1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BTT/Pods-BTT-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A0CEA3EF5577F960A6D6FE8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BTT/Pods-BTT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9445EF8F7EAABB6D223124C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		549D803A1C0D11B8007260E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -270,6 +348,7 @@
 				549D80461C0D11B8007260E4 /* DataViewController.swift in Sources */,
 				549D80421C0D11B8007260E4 /* AppDelegate.swift in Sources */,
 				549D80BA1C165812007260E4 /* LearnMoreExpandingCell.swift in Sources */,
+				54F7AA111C4AA9580041316E /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +480,7 @@
 		};
 		549D806B1C0D11B8007260E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8AA5ABA0690CEB909C495F4 /* Pods-BTT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BTT/Info.plist;
@@ -412,6 +492,7 @@
 		};
 		549D806C1C0D11B8007260E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BD56963B4BF23B81F09BB6A /* Pods-BTT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BTT/Info.plist;
