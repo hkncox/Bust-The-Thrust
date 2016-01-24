@@ -1192,10 +1192,10 @@
         <image name="Tongue Thrust Logo2" width="1108" height="524"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="SsR-gT-H5P"/>
         <segue reference="a7y-EU-y4J"/>
-        <segue reference="zBx-aw-8iR"/>
+        <segue reference="EmS-yf-Fec"/>
         <segue reference="Aqc-Ld-O0x"/>
         <segue reference="9VG-bZ-haq"/>
-        <segue reference="EmS-yf-Fec"/>
     </inferredMetricsTieBreakers>
 </document>
